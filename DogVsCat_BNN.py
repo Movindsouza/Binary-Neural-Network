@@ -133,15 +133,6 @@ test_x = np.array([i[0] for i in test]).reshape(-1,IMG_SIZE,IMG_SIZE,1)
 test_y =np.array( [i[1] for i in test])
 
 
-
-
-# In[58]:
-
-
-print(type(test_x))
-print(type(X))
-
-
 # In[59]:
 
 
@@ -162,22 +153,4 @@ model.fit(X, Y, batch_size=128, epochs=35,verbose=1)
 
 test_loss, test_acc = model.evaluate(test_x, test_y)
 test_loss, test_acc 
-
-
-# In[12]:
-
-
-
-
-
-# In[13]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
